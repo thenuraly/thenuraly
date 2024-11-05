@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom 6x4 Table Layout</title>
+    <style>
+        table {
+            border-collapse: collapse; /* Merge borders for a cleaner look */
+            width: 100%;                /* Full width of the table */
+        }
+        th, td {
+            border: 1px solid black;     /* Border for table cells */
+            padding: 10px;              /* Padding inside cells */
+            text-align: center;         /* Center text */
+        }
+        th {
+            background-color: white;  /* Light gray background for headers */
+        }
+        h1 {
+            text-align: center;         /* Center the title */
+        }
+    </style>
+</head>
+<body>
+    <h1>Caption</h1>
+    <table>
+        <tr>
+            <td>R1C1</td>
+            <td>R1C2</td>
+            <td>R1C3</td>
+            <td rowspan="4">R1,2,3,4C4</td> 
+        </tr>
+        <tr>
+            <td>R2C1</td>
+            <td rowspan="3">R2,3,4C2,3</td>
+        </tr>
+        <tr>
+            <td>R3C1</td>
+        </tr>
+        <tr>
+            <td>R4C1</td>
+        </tr>
+        <tr>
+            <td colspan="2">R5C1,2</td> 
+            <td colspan="2">R5C3,4</td>
+        </tr>
+        <tr>
+            <td colspan="4">R6C1,2,3,4</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
