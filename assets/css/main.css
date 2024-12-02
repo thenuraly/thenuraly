@@ -1324,3 +1324,24 @@ body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
+
+header {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Optional: Full viewport height for centering */
+  background-color: #f0f0f0; /* Optional: Add background for visibility */
+}
+
+.logo {
+  max-width: 150px; /* Ensure responsiveness */
+  max-height: 150px;
+}
+
+.new-shape {
+  fill: yellow;
+}
+
+.logo:hover .new-shape{
+  fill: burlywood;
+}
